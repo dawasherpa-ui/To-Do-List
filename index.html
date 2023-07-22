@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="logo">
+                    <img src="image/logo.jfif" alt="logo">
+                    <span>TO DO LIST</span>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="main-container">
+                <div class="search">
+                    <input type="search" id="searchInput" placeholder="Search for list..">
+                </div>
+                <button onclick="createBtn()" class="create-btn">Create</button>
+                <div class="sections">
+                    <ul class="content">
+                    </ul>
+                    <div class="info">
+                        <div class="welcome">
+                            <img src="image/checklist.png" alt="image">
+                            <div>
+                                <h2>Welcome User,</h2>
+                                <p>No list available!! </p>
+                            </div>
+                        </div>
+                        <div id="information">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section id="create-section">
+                <h2>Create your ToDo</h2>
+                <form>
+                    <div class=" forList">
+                        <label for="title">Title:</label>
+                        <input type="text" id="title" maxlength="50" placeholder="Name of work" required>
+                    </div>
+                    <div class="dates">
+                        <label for="date">Date:</label>
+                        <input type="date" id="date" required>
+                        <label for="time">Time:</label>
+                        <input type="time" id="time" required>
+                    </div>
+                    <div class="textarea">
+                        <label for="txtArea">Description:</label>
+                        <textarea id="txtArea" placeholder="Message..." maxlength="150"></textarea>
+                    </div>
+                    <div class="submit">
+                        <input type="submit" value="Submit" />
+                        <a>Cancel</a>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <footer></footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
